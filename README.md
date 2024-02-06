@@ -1,6 +1,6 @@
-# video-focus-tracking
+# Anti-spoofing
 
-# Pinout Map
+# Esp 32 Pinout Map
 
 | Pin                                                 | ESP32 | Comments                                       |
 | --------------------------------------------------- | ----- | ---------------------------------------------- |
