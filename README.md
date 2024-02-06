@@ -2,20 +2,12 @@
 
 # ESP32 Pinout Map
 
-| Pin  | ESP32 | Comments                                                                                                                                                                                                                                                           |
-| ---- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| VIN  | 3.3V  | Power                                                                                                                                                                                                                                                              |
-| GND  | GND   | Ground                                                                                                                                                                                                                                                             |
-| SCL  | G22   |                                                                                                                                                                                                                                                                    |
-| SDA  | G21   |                                                                                                                                                                                                                                                                    |
-| INT  | G17   | Interrupt output, defaults to opendrain output(tristate), 47 kΩ pullup resistor to IOVDD required                                                                                                                                                                  |
-| Lpin | G16   | Comms enable. Drive this pin to logic 0 to disable the I2C comms when the device is in LP mode. Drive this pin to logic 1 to enable I2C comms in LP mode. Typically used when it is required to change the I2C adress in multidevice systems. A 47 kΩ pullup resis |
-
 ### Analysis Approach:
 
-- **Uniformity**: All measurements within each experiment are consistent, except
-  for "Experiment 3: 3D -- close," which shows variability. This variance is
-  expected in 3D environments due to depth differences.
+t- **Uniformity**: All measurements within each experiment are consistent,
+except for "Experiment 3: 3D -- close," which shows variability. This variance
+is expected in 3D environments due to depth differences.
+
 - **Comparison**:
   - **2D Experiments**: The "2D -- close" measurements are significantly lower
     than any other readings, suggesting minimal distance or detection close to
@@ -56,11 +48,19 @@
 
 ### Conclusion:
 
-The data analysis demonstrates the sensor's capability to differentiate between
-2D and 3D objects at various distances. The variance in 3D close measurements
-highlights the sensor's potential in applications requiring depth detection,
-such as navigation aids, obstacle detection, and interactive installations. The
-uniformity in other measurements confirms the sensor's reliability under less
-complex conditions. Further experimentation could explore the sensor's
-performance across different materials, lighting conditions, and angles to fully
-leverage its capabilities in real-world applications.
+# The data analysis demonstrates the sensor's capability to differentiate between 2D and 3D objects at various distances. The variance in 3D close measurements highlights the sensor's potential in applications requiring depth detection, such as navigation aids, obstacle detection, and interactive installations. The uniformity in other measurements confirms the sensor's reliability under less complex conditions. Further experimentation could explore the sensor's performance across different materials, lighting conditions, and angles to fully leverage its capabilities in real-world applications.
+
+# Anti-spoofing
+
+# Esp 32 Pinout Map
+
+| Pin  | ESP32 |
+| ---- | ----- |
+| VIN  | 3.3V  |
+| GND  | GND   |
+| SCL  | G22   |
+| SDA  | G21   |
+| INT  | G17   |
+| Lpin | G16   |
+
+> 1a5266a8a97f4bdd7d3d3b1d66f63b1213bafacd
