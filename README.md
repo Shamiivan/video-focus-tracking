@@ -1,5 +1,3 @@
-# Anti - spoofing
-
 # Project Overview
 
 The core challenge addressed by this project is the accurate classification of
