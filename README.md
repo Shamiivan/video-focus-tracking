@@ -8,7 +8,7 @@ objects or scenes as 2D or 3D faces on depth measurements.
 Mediapipe's API lacks the capability to distinguish between a 3D face and an
 image of a face(2D). This project aims to address and resolve this limitation.
 
-### High Level Breakdown of the SOlution
+### High Level Breakdown of the Solution
 
 To distinguish between 2D and 3D faces, I employed a Time of Flight (ToF) sensor
 connected to an ESP32 microcontroller. This sensor captures depth information
